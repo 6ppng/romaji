@@ -2,6 +2,7 @@
   "recommendations": [
     "ms-python.python",
     "dangmai.workspace-default-settings",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "hediet.vscode-drawio"
   ]
 }
