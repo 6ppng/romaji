@@ -6,6 +6,7 @@ authors = [""]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+wikipedia = "^1.4.0"
 
 [tool.poetry.dev-dependencies]
 pysen = {version = "^0.10.2", extras = ["lint"]}
