@@ -6,7 +6,7 @@ import wikipedia
 # 言語を日本語に設定
 wikipedia.set_lang("jp")
 # テキストファイルを開く
-f = open("wikipedia.txt", "a")
+f = open("data/wikipedia.txt", "a")
 
 args = sys.argv
 word = args[1]
