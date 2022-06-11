@@ -7,6 +7,7 @@ authors = ["6ppng"]
 [tool.poetry.dependencies]
 python = "^3.10"
 wikipedia = "^1.4.0"
+pykakasi = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
 pysen = {version = "^0.10.2", extras = ["lint"]}

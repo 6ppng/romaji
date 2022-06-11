@@ -22,8 +22,8 @@ basicConfig(filename=LOG_PATH, level=DEBUG)
 def get_page_content(title: str) -> str:
     """指定された記事のテキストを取得する.
 
-    与えられたタイトルから記事が一意に定まらない場合、
-    クエリが参照するタイトルの中で最長のタイトルで再検索する。
+    * 与えられたタイトルから記事が一意に定まらない場合、
+    * クエリが参照するタイトルの中で最長のタイトルで再検索する。
 
     Args:
         title (str): 記事のタイトル
@@ -53,8 +53,8 @@ def get_page_content(title: str) -> str:
 def main() -> None:
     """Wikipediaから記事を取得する.
 
-    Wikipediaから日本語のランダムな記事を取得する。
-    空行・英字を除去した後、生データとしてファイルに格納する。
+    * Wikipediaから日本語のランダムな記事を取得する。
+    * 空行・英字を除去した後、生データとしてファイルに格納する。
     """
     info("取得処理開始")
     set_lang("ja")
@@ -73,7 +73,7 @@ def main() -> None:
 
     info("前処理開始")
     texts = list(map(lambda text: sub("[a-zA-Z]", "", text), texts))
-    texts = list(map(lambda text: sub(r"\n\s*\n", "\n", text), texts))
+    texts = list(map(lambda text: sub(r"\n\s*\n", "\n", text + "\n"), texts))
     info("前処理完了")
 
     info("ファイル格納開始")
